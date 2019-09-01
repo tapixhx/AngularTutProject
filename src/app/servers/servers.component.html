@@ -8,6 +8,5 @@
 <!-- <p>{{ allowNewServer }}</p>string interpolation -->
 <!-- <p [innerText]="allowNewServer"></p> property binding -->
 <!-- <p>{{ serverCreationStatus }}</p> -->
-<p *ngIf = "serverCreated">Server was created, Server N  ame is {{ serverName }}</p>
-<app-server></app-server>
-<app-server></app-server>
+<p *ngIf = "serverCreated">Server was created, Server Name is {{ serverName }}</p>
+<app-server *ngFor="let server of servers"></app-server>
